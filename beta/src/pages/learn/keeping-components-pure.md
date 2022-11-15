@@ -1,10 +1,10 @@
 ---
-title: Keeping Components Pure
+title: कौम्पोनॅन्ट्स को शुद्ध रखना
 ---
 
 <Intro>
 
-Some JavaScript functions are *pure.* Pure functions only perform a calculation and nothing more. By strictly only writing your components as pure functions, you can avoid an entire class of baffling bugs and unpredictable behavior as your codebase grows. To get these benefits, though, there are a few rules you must follow.
+कुछ जावास्क्रिप्ट के फंक्शंस *शुद्ध* होते हैं| शुद्ध फंक्शंस केवल एक कैलकुलेशन करते हैं और इससे अधिक कुछ नहीं| केवल अपने कौम्पोनॅन्ट्स को शुद्ध फंक्शंस के रूप में सख्ती से लिखने से, आप अपने कोडबेस के बढ़ने के साथ-साथ चकरा देने वाले बग और अप्रत्याशित व्यवहार की एक पूरी श्रेणी से बच सकते हैं। हालांकि, इन लाभों को प्राप्त करने के लिए आपको कुछ नियमों का पालन करना होगा।
 
 </Intro>
 
