@@ -20,22 +20,22 @@ title: कौम्पोनॅन्ट्स को शुद्ध रखन�
 
 कंप्यूटर विज्ञान (और विशेष रूप से कार्यात्मक प्रोग्रामिंग की दुनिया) में, [एक शुद्ध फंक्शन](https://wikipedia.org/wiki/Pure_function) निम्नलिखित विशेषताओं वाला एक फंक्शन है:
 
-* **Minds its own business.** It does not change any objects or variables that existed before it was called.
-* **Same inputs, same output.** Given the same inputs, a pure function should always return the same result.
+* **अपने काम से काम रखता है|** यह किसी भी object या variables को नहीं बदलता है जो इसे बुलाए जाने से पहले मौजूद था।
+* **समान इनपुट, समान आउटपुट।** एक ही इनपुट को देखते हुए, एक शुद्ध फ़ंक्शन को हमेशा एक ही परिणाम देना चाहिए।
 
-You might already be familiar with one example of pure functions: formulas in math.
+आप पहले से ही शुद्ध फंक्शंस के एक उदाहरण से परिचित हो सकते हैं: गणित में सूत्र।
 
-Consider this math formula: <Math><MathI>y</MathI> = 2<MathI>x</MathI></Math>.
+इस गणित सूत्र पर विचार करें: <Math><MathI>y</MathI> = 2<MathI>x</MathI></Math>.
 
-If <Math><MathI>x</MathI> = 2</Math> then <Math><MathI>y</MathI> = 4</Math>. Always. 
+अगर <Math><MathI>x</MathI> = 2</Math> तो <Math><MathI>y</MathI> = 4</Math>. हमेशा। 
 
-If <Math><MathI>x</MathI> = 3</Math> then <Math><MathI>y</MathI> = 6</Math>. Always. 
+अगर <Math><MathI>x</MathI> = 3</Math> तो <Math><MathI>y</MathI> = 6</Math>. हमेशा। 
 
-If <Math><MathI>x</MathI> = 3</Math>, <MathI>y</MathI> won't sometimes be <Math>9</Math> or <Math>–1</Math> or <Math>2.5</Math> depending on the time of day or the state of the stock market. 
+अगर <Math><MathI>x</MathI> = 3</Math>, <MathI>y</MathI> कभी-कभी <Math>9</Math> नहीं होगा, या <Math>–1</Math> या <Math>2.5</Math> दिन के समय या शेयर बाजार की स्थिति के आधार पर।
 
-If <Math><MathI>y</MathI> = 2<MathI>x</MathI></Math> and <Math><MathI>x</MathI> = 3</Math>, <MathI>y</MathI> will _always_ be <Math>6</Math>. 
+अगर <Math><MathI>y</MathI> = 2<MathI>x</MathI></Math> और <Math><MathI>x</MathI> = 3</Math>, <MathI>y</MathI> _हमेशा_ <Math>6</Math> रहेगा| 
 
-If we made this into a JavaScript function, it would look like this:
+अगर हम इसे एक जावास्क्रिप्ट फ़ंक्शन में बनाते हैं, तो यह ऐसा दिखाई देगा:
 
 ```js
 function double(number) {
@@ -43,9 +43,9 @@ function double(number) {
 }
 ```
 
-In the above example, `double()` is a **pure function.** If you pass it `3`, it will return `6`. Always.
+उपरोक्त उदाहरण में, `double()` एक **शुद्ध फंक्शन** है। यदि आप इसे `3` पास करते हैं, तो यह हमेशा `6` return करेगा|
 
-React is designed around this concept. **React assumes that every component you write is a pure function.** This means that React components you write must always return the same JSX given the same inputs:
+React इस अवधारणा के आसपास डिजाइन की गई है। **React मानता है कि आपके द्वारा लिखा गया प्रत्येक कौम्पोनॅन्ट एक शुद्ध फ़ंक्शन है।** इसका मतलब यह है कि आपके द्वारा लिखे गए React कौम्पोनॅन्ट्स को हमेशा उसी JSX को उसी इनपुट के साथ return करना चाहिए:
 
 <Sandpack>
 
