@@ -10,15 +10,15 @@ title: कौम्पोनॅन्ट्स को शुद्ध रखन�
 
 <YouWillLearn>
 
-* What purity is and how it helps you avoid bugs
-* How to keep components pure by keeping changes out of the render phase
-* How to use Strict Mode to find mistakes in your components
+* शुद्धता क्या है और यह आपको bugs से बचने में कैसे मदद करती है 
+* परिवर्तनों को render phase से बाहर रखकर कौम्पोनॅन्ट्स को शुद्ध कैसे रखा जाए
+* अपने कौम्पोनॅन्ट्स में गलतियाँ खोजने के लिए स्ट्रिक्ट मोड का उपयोग कैसे करें
 
 </YouWillLearn>
 
-## Purity: Components as formulas {/*purity-components-as-formulas*/}
+## शुद्धता: सूत्र के रूप में कौम्पोनॅन्ट्स {/*purity-components-as-formulas*/}
 
-In computer science (and especially the world of functional programming), [a pure function](https://wikipedia.org/wiki/Pure_function) is a function with the following characteristics:
+कंप्यूटर विज्ञान (और विशेष रूप से कार्यात्मक प्रोग्रामिंग की दुनिया) में, [एक शुद्ध फंक्शन](https://wikipedia.org/wiki/Pure_function) निम्नलिखित विशेषताओं वाला एक फंक्शन है:
 
 * **Minds its own business.** It does not change any objects or variables that existed before it was called.
 * **Same inputs, same output.** Given the same inputs, a pure function should always return the same result.
